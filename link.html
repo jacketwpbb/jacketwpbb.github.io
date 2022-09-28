@@ -9,16 +9,7 @@
 
         const search = new URLSearchParams(location.search);
         const link = search.get('link');
-        const startTime = search.get('startTime');
-                window.location = link;  
-
-//         if (startTime && link) {
-//             const startTimestamp = +new Date(startTime);
-//             const ts = new Date();
-//             if (ts - startTime > 0) {
-//                 window.location = link;  
-//             }
-//         }
+        window.location = link; 
 
     </script>
 </head>
