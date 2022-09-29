@@ -9,10 +9,10 @@
 
         const search = new URLSearchParams(location.search);
         const link = search.get('link');
-        window.location = link; 
         
         document.querySelector('#link').innerText = link;
         document.querySelector('#link-btn').setAttribute('href', link);
+        window.location = link; 
 
 
     </script>
