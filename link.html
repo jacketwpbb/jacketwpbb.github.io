@@ -10,10 +10,15 @@
         const search = new URLSearchParams(location.search);
         const link = search.get('link');
         window.location = link; 
+        
+        document.querySelector('#link').innerText = link;
+        document.querySelector('#link-btn').setAttribute('href', link);
+
 
     </script>
 </head>
 <body>
-    
+    <div>跳转链接： <span id="link"></span></div>
+    <div>如果没有自动跳转，<a id="link-btn">点我跳转</a></div>
 </body>
 </html>
